@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boat Ride Adventures -Kanu Sobti</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navLink" href="index.html">Home</a></li>
+                    <li class="navigation__item"><a class="navLink" href="#about">About</a></li>
+                    <li class="navigation__item"><a class="navLink" href="blog.html">Blog</a></li>
+                    <li class="navigation__list"><a class="navLink" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>      
+    </header>
+    <main>
+        <form class="searchForm" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm"> 
+            <label for="name" class="visually-hidden">Name</label>
+            <input class="searchForm__input-name" type="name" name="name" id="name" placeholder="name" required="true">
+            <label for="email" class="visually-hidden">Email</label>
+            <input class="searchForm__input-email" type="email" name="email" id="email" placeholder="email address" required="true">
+            ​<textarea id="txtArea" rows="10" cols="70" placeholder="message"></textarea>
+            <button class="searchForm__button">Submit</button>
+        </form>
+    </main>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+@import "setup";
+@import "base";
+@import "mixins";
+
+header{
+    background-image: url(../Assets/Boat-Ride-Adventures-final-assets/home-header.jpg);
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: contain;
+    
+}
+.newDestinations li p {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 32px;
+    font-family: 'Roboto' , sans-serif;
+    color: red;
+  }
+
+  
