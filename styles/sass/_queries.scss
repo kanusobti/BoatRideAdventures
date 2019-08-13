@@ -1,0 +1,259 @@
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px){
+   .wrapper{
+       max-width:90%;
+   }
+   // INDEX PAGE styling
+    .heading{
+        h1{
+            
+            width:100%;
+            padding-top:22%;
+            margin:4% 13%;
+            // color:red;
+        }
+    }
+    h1{
+        font-size:7.5rem;
+    }
+    h2{
+        font-size:4.2rem;
+        line-height:50px;
+    }
+    h3{
+        font-size:3rem;
+        line-height:50px;
+    }
+    h4{
+        font-size:2.1rem;
+        line-height: 44px;
+    }
+    p, li, input, textarea{
+        font-size:1.8rem;
+        letter-spacing: 0.5px;
+    }
+    .findOutMoreButton a,
+    .readMoreButton a,
+    button{
+        font-size: 1.8rem;
+        padding:5px 13px;
+    }
+   header .navigation .navigationList{
+       width:50%;
+       li{
+           padding-right:1.8rem;
+       }
+   }
+   .rightOverlappingImage{
+       display: none;
+   }
+   .newDestinations{
+    padding:10% 0;
+    .firstLists{
+        display: block;
+        .listItems{
+            width:100%;
+            padding-bottom:3%;
+        }
+    }
+}
+.iconContainer{
+    width:100px;
+    height:40px;
+    margin-top:1%;
+    margin-right:2%;
+}
+.ourProgramMainContainer{
+    padding:2% 0;
+    .ourProgramContainer{
+        width:48%;
+    }
+}
+.leftImage{
+    top:-4rem;
+}
+.rightImage{
+    bottom:-2rem;
+}
+.leftDescription{
+    padding:19% 0 0 18%;
+}
+.winTripDescription{
+    width:56%;
+    margin-left:3%;
+}
+//BLOG page styling
+.blogHeader{
+    background-size:cover;
+    background-position: center;
+}
+.blogSideImg{
+    left:-3rem;
+}
+.blogSideWrittenContainer{
+    padding:2% 10% 4%;
+}
+.commentsText{
+    width:75%;
+    margin-left: 5%;
+}
+
+//Contact Page styling starts
+.contactHeader{
+    background-size: cover;
+    background-position: center;
+}
+.contactMainContainer .contactMain .formSection{
+    top:-44rem;
+    right:-27rem;
+}
+
+   
+}//small desktops styling ends//
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px){
+    //Index page styling
+    h1{
+        font-size:7rem;
+    }
+    h2{
+        font-size:4rem;
+        line-height:48px;
+    }
+    h3{
+        font-size:2.8rem;
+        line-height:48px;
+    }
+    h4{
+        font-size:2rem;
+        line-height: 44px;
+    }
+    p, li, input, textarea{
+        font-size:1.6rem;
+        letter-spacing: 0.5px;
+    }
+    .findOutMoreButton a,
+    .readMoreButton a,
+    button{
+        font-size: 1.7rem;
+        padding:5px 13px;
+    }
+    header{
+        .navigation{
+            .navigationList{
+                width:58%;
+            }
+        }
+    }
+    .ourProgramMainContainer{
+        display:block;
+        .ourProgramContainer{
+            width:100%;
+                       
+        }
+    }
+    .leftDescription,
+    .rightDescription{
+        align-items: center;
+        padding:5% 10%;
+    }
+    .leftImage img, .rightImage img{
+        box-shadow:none;
+    }
+    .extraVacationContainer{
+        .extraVacation{
+            padding:6% 0;
+        }
+    }
+    .winTripContainer{
+        .winTrip{
+            display:block;
+        
+        }
+    
+    }
+    .winTripImage img{
+        box-shadow:none;
+    }
+    .winTripDescription{
+        margin:0;
+        width:100%;
+        h3{
+            text-align:center;
+        }
+        .findOutMoreButton{
+            text-align:center;
+        }
+    }
+    .gallery{
+        .galleryImgRow{
+            .galleryImg{
+                width:48%;
+            }
+        }
+    }
+    .galleryImg:nth-child(3){
+        display:none;
+    }
+    //contact page styling//
+    .contactMainContainer{
+        .contactMain{
+            .formSection{
+                right:-24rem;
+                width:67%;
+            }
+        }
+    }
+    .contactMainContainer{
+        padding-top:5%;
+        margin-bottom:-4%;
+    }
+}//landscape phone to potrait tablet ends
+///* Landscape phones and down */
+
+@media (max-width:480px){
+    h1{
+        font-size:5.5rem;
+    }
+    h2{
+        font-size:3rem;
+        line-height:46px;
+    }
+    h3{
+        font-size:2.6rem;
+        line-height:46px;
+    }
+    h4{
+        font-size:1.8rem;
+        line-height: 42px;
+    }
+    p, li, input, textarea{
+        font-size:1.6rem;
+        letter-spacing: 0.5px;
+    }
+    header{
+        .navigation{
+            .navigationList{
+                width:100%;
+            }
+        }
+    }
+    .heading{
+        h1{
+            width:100%;
+            padding-top:44%;
+            margin:0;
+        }
+    }
+    .winTripContainer{
+        .wrapper{
+            max-width:100%;
+            width:100%;
+        }
+        .winTripDescription{
+            padding:10%;
+        }
+    }
+
+}//landscape phones and down ends//

@@ -11,6 +11,98 @@
     <link rel="stylesheet" href="styles/style.css">    
 </head>
 <body>
+    <header class="blogHeader"id="blog">
+        <div class="wrapper">
+            <nav class="navigation">
+                <ul class="navigationList">
+                    <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
+                    <li class="navItem"><a class="navLink" href="#about">About</a></li>
+                    <li class="navItem"><a class="navLink" href="blog.html">Blog</a></li>
+                    <li class="navItem"><a class="navLink" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="blogHeading wrapper">
+            <h1>Blog</h1>
+        </div>   
+    </header>
+    <main class="blogMainContainer">
+        <aside>
+            <div class="asideContainer wrapper">
+                <div class="blogSideImg">
+                    <img src="Assets/Boat-Ride-Adventures-final-assets/blog-side-image.jpg" alt="Deck of a cruise ship showing the sails and ropes with the sunset in the backdrop">
+                </div>
+                <div class="blogSideWrittenContainer">
+                    <div class="ourMission">
+                        <h4>Our Mission</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sapiente.</p>
+                    </div>
+                    <div class="recentPosts">
+                        <h4>Recent Posts</h4>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>    
+                </div>
+          </div>  
+            
+        </aside>
+        <section class="rightSection wrapper">
+            <div class="blogPostImg">
+                <img src="Assets/Boat-Ride-Adventures-final-assets/blog-post-image.jpg" alt="a yacht tied up to the shore with a rope with the sparkling water">
+            </div>
+            <div class="blogPostContainer">    
+                <div class="blogPostDescription wrapper">
+                    <h3>Next Destination</h3>
+                    <p>Monday October30, 2019 by Sulaire</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi non cumque quidem, eveniet illo veritatis earum suscipit impedit, accusamus sint nemo qui optio labore. Magnam velit atque ipsam reprehenderit officia.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quam pariatur officiis voluptate quidem inventore nemo et, mollitia, at cum, eius non illum? Quod id dolorem earum est reiciendis. Necessitatibus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti nesciunt sint voluptates ipsum numquam reiciendis saepe odio enim magnam. Illum itaque obcaecati voluptas corporis blanditiis placeat expedita dolore omnis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus amet odit sapiente recusandae earum quia aut deserunt error dignissimos, ab facilis neque! Aspernatur iste voluptates, modi eius iusto repellat molestiae.</p>
+                </div>
+            </div> 
+            <div class="commentsContainer wrapper">
+                <h3>Comments:</h3>
+                <div class="commentsDescription">
+                    <div class="commentsImage">
+                        <img src="Assets/Boat-Ride-Adventures-final-assets/comment-1.jpg" alt="picture of a guy named Ali having curly hair and a little moustache">
+                    </div>
+                    <div class="commentsText">
+                        <p class="blueBold">Tuesday October 9th, 2019 by Ali</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque consequatur facere voluptas corrupti temporibus deserunt voluptates libero rerum nam laborum.</p>
+                    </div>
+                </div>
+                <div class="commentsDescription">
+                    <div class="commentsImage">
+                        <img src="Assets/Boat-Ride-Adventures-final-assets/comment-2.jpg" alt="picture of a girl named Lisa having curly hair and a little moustache">
+                    </div>
+                    <div class="commentsText">
+                        <p class="blueBold">Wednesday October 10th, 2019 by Lisa</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque consequatur facere voluptas corrupti temporibus deserunt voluptates libero rerum nam laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blogForm">
+                <form class="searchForm wrapper" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm"> 
+                    <fieldset>
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input class="searchFormInputName" type="name" name="name" id="name" placeholder="Name" required="true">
+                        <label for="email" class="visuallyHidden">Email</label>
+                        <input class="searchFormInputEmail" type="email" name="email" id="email" placeholder="Email address" required="true">
+                        ​<textarea id="txtArea" rows="10" cols="70" placeholder="Comment"></textarea>
+                        <button class="searchForm__button">Post Comment</button>
+                    </fieldset>
+                </form>
+            </div>        
+        </section>
+    </main>
+    <footer class="galleryCopyright">
+        <p>Copyright@2019 <a class="galleryLink" href="https://hackeryou.com">HackerYou</a></p>
+    </footer>
+        
     
 </body>
 </html>

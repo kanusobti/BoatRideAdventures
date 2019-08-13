@@ -234,9 +234,9 @@ h1, h2, h3, h4, body, ul, li, p {
 img {
   max-width: 100%;
   height: auto;
-  width: 100%;
   border: 0;
   display: block;
+  width: 100%;
 }
 
 h1, h2, h3, h4, button {
@@ -260,6 +260,7 @@ h1 {
   font-style: italic;
   text-transform: uppercase;
   margin: 0;
+  color: #fdd908;
 }
 
 h2 {
@@ -283,9 +284,10 @@ h4 {
   font-style: italic;
   line-height: 58px;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
-p {
+p, li, input, textarea {
   font-size: 2rem;
   line-height: 28px;
   letter-spacing: 1px;
@@ -307,19 +309,843 @@ button {
   font-size: 2.24rem;
   text-align: center;
   line-height: 41.6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "IM Fell English", serif;
+  color: #0d457f;
+  font-style: italic;
+  background: #fdd908;
+  padding: 10px 20px;
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink:focus {
+  left: 10px;
 }
 
 header {
   background-image: url(../Assets/Boat-Ride-Adventures-final-assets/home-header.jpg);
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: contain;
+  background-size: cover;
+  padding: 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
-.newDestinations li p {
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  line-height: 32px;
-  font-family: 'Roboto' , sans-serif;
-  color: red;
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navigation .navigationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 38%;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heading h1 {
+  width: 45%;
+  padding-top: 32%;
+  margin-left: 1%;
+}
+
+.heading h1 .headingAdventures {
+  display: block;
+}
+
+.rightOverlappingImage {
+  width: 55%;
+  position: absolute;
+  bottom: -12rem;
+  right: 0rem;
+  z-index: 10;
+}
+
+.newDestinations {
+  background-color: #eafefc;
+  position: relative;
+  padding: 16% 0;
+}
+
+.newDestinations .firstLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.newDestinations .firstLists .listItems {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.iconContainer {
+  width: 20%;
+  height: 20%;
+  background: #fdd908;
+  border-radius: 50%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fas {
+  color: #0d457f;
+  font-size: 2rem;
+}
+
+.ourProgramMainContainer {
+  background: #0d457f;
+  padding: 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ourProgramMainContainer .ourProgramContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+
+.ourProgramMainContainer .ourProgramContainer .ourProgramList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ourProgramMainContainer .ourProgramContainer .ourProgramList h3, .ourProgramMainContainer .ourProgramContainer .ourProgramList p {
+  color: #ffffff;
+}
+
+.leftImage {
+  position: relative;
+  top: -9rem;
+}
+
+.leftImage img {
+  -webkit-box-shadow: 20px 20px;
+          box-shadow: 20px 20px;
+  color: #fdd908;
+}
+
+.rightImage {
+  position: relative;
+  bottom: -14rem;
+}
+
+.rightImage img {
+  -webkit-box-shadow: -20px 20px 0px 0px #fdd908;
+  box-shadow: -20px 20px 0px 0px #fdd908;
+}
+
+.leftDescription {
+  padding: 10% 0 10% 20%;
+}
+
+.leftDescription h3 {
+  text-align: right;
+}
+
+.rightDescription {
+  padding: 2% 20% 10% 0;
+}
+
+.readMoreButton, .findOutMoreButton {
+  margin: 5% 0;
+}
+
+.extraVacationContainer {
+  background: #eafefc;
+}
+
+.extraVacationContainer .extraVacation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6%;
+}
+
+.extraVacationContainer .extraVacation h3 {
+  color: #0d457f;
+  padding-bottom: 1%;
+}
+
+.winTripContainer {
+  background-color: #eafefc;
+  padding: 5% 0;
+}
+
+.winTripContainer .winTrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.winTripImage img {
+  -webkit-box-shadow: -20px 20px 0px 0px #fdd908;
+  box-shadow: -20px 20px 0px 0px #fdd908;
+}
+
+.winTripDescription {
+  margin-left: 10%;
+  width: 64%;
+}
+
+.winTripDescription h3 {
+  color: #0d457f;
+}
+
+.gallery {
+  background: #0d457f;
+  padding: 5% 0 0;
+}
+
+.gallery .galleryImgRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .galleryImgRow .galleryImg {
+  width: 32%;
+}
+
+.gallery .galleryImgRow .galleryImg img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.gallery .galleryImgRow .galleryImg img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.galleryCopyright {
+  background: #fdd908;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.galleryCopyright .galleryLink {
+  color: #0d457f;
+}
+
+.contactHeader {
+  background-image: url(../Assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  height: 73vh;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactHeader .navigationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+}
+
+.contactHeading {
+  position: relative;
+  top: -24rem;
+}
+
+.contactHeading h1 {
+  color: #ffffff;
+}
+
+.contactMainContainer {
+  background: #eafefc;
+  padding: 5% 0;
+}
+
+.contactMainContainer .contactMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: -18rem;
+}
+
+.contactMainContainer .formSection {
+  background: #0d457f;
+  position: relative;
+  top: -23rem;
+  right: -8rem;
+  -webkit-box-shadow: 20px 20px #fdd908;
+          box-shadow: 20px 20px #fdd908;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 73%;
+  padding: 4%;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialIcons .socialMediaIcons i {
+  color: #0d457f;
+  padding: 8px;
+  font-size: 2.3rem;
+}
+
+.socialIcons .fa-instagram:hover {
+  color: #8a3ab9;
+}
+
+.socialIcons .fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.socialIcons .fa-whatsapp:hover {
+  color: #25D366;
+}
+
+.socialIcons .fa-twitter:hover {
+  color: #00aced;
+}
+
+.contactEmail {
+  padding-bottom: 3%;
+}
+
+input {
+  background: #0d457f;
+  border: none;
+  width: 49%;
+  border-bottom: 3px solid #fdd908;
+  padding: 1% 2%;
+  margin: 2% 0 4%;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+textArea {
+  display: block;
+  background: #0d457f;
+  width: 100%;
+  border: 3px solid #fdd908;
+  padding: 1% 2%;
+  margin: 2% 0 4%;
+}
+
+.searchFormButton {
+  width: 100%;
+  padding: 1%;
+}
+
+footer.galleryCopyright {
+  margin-top: 0;
+}
+
+.blogHeader {
+  background-image: url(../Assets/Boat-Ride-Adventures-final-assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  height: 73vh;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogHeader .navigationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+}
+
+.blogHeading {
+  position: relative;
+  top: -43%;
+}
+
+.blogHeading h1 {
+  color: #ffffff;
+}
+
+.blogMainContainer {
+  background: #eafefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 5% 0;
+}
+
+.blogMainContainer aside {
+  width: 35%;
+  margin-top: 3%;
+}
+
+.blogMainContainer aside .asideContainer {
+  background: #0d457f;
+}
+
+.blogMainContainer .rightSection {
+  width: 60%;
+}
+
+.blogSideWrittenContainer {
+  padding: 2% 6% 4%;
+}
+
+.blogSideWrittenContainer h4 {
+  color: #fdd908;
+}
+
+.blogSideWrittenContainer p {
+  color: white;
+}
+
+.blogSideWrittenContainer li {
+  color: #ffffff;
+  list-style-type: disc;
+}
+
+.blogSideImg {
+  position: relative;
+  top: -1rem;
+  left: -6rem;
+}
+
+.blogPostImg {
+  position: relative;
+  top: -24rem;
+  right: -3.75rem;
+}
+
+.blogPostImg img {
+  -webkit-box-shadow: -20px 20px 0px 0px #fdd908;
+  box-shadow: -20px 20px 0px 0px #fdd908;
+}
+
+.blogPostContainer {
+  margin-top: -18rem;
+  padding: 5% 0 8%;
+  -webkit-box-shadow: -3px 4px #fdd908;
+          box-shadow: -3px 4px #fdd908;
+  position: relative;
+  top: -5rem;
+  right: -2rem;
+  overflow-x: hidden;
+}
+
+.blogPostContainer h3 {
+  color: #0d457f;
+}
+
+.blogPostContainer p {
+  padding: 1% 0;
+}
+
+.commentsContainer {
+  margin-bottom: 1%;
+  padding: 2% 0;
+}
+
+.commentsContainer h3 {
+  color: #0d457f;
+}
+
+.commentsContainer .commentsDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3%;
+}
+
+.commentsContainer .commentsDescription .commentsImage {
+  width: 20%;
+}
+
+.commentsText {
+  width: 68%;
+  margin-left: 2%;
+}
+
+.commentsText p {
+  padding: 1% 0;
+}
+
+.commentsText .blueBold {
+  color: #0d457f;
+  font-weight: bold;
+  padding: 0;
+}
+
+.blogForm input, .blogForm textarea {
+  background: #eafefc;
+}
+
+.blogForm ::-webkit-input-placeholder {
+  color: #0d457f;
+  opacity: 1;
+}
+
+.blogForm :-ms-input-placeholder {
+  color: #0d457f;
+  opacity: 1;
+}
+
+.blogForm ::-ms-input-placeholder {
+  color: #0d457f;
+  opacity: 1;
+}
+
+.blogForm ::placeholder {
+  color: #0d457f;
+  opacity: 1;
+}
+
+.blogForm button {
+  width: 100%;
+  padding: 0.5%;
+  background: #0d457f;
+  color: #fdd908;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 90%;
+  }
+  .heading h1 {
+    width: 100%;
+    padding-top: 22%;
+    margin: 4% 13%;
+  }
+  h1 {
+    font-size: 7.5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  h4 {
+    font-size: 2.1rem;
+    line-height: 44px;
+  }
+  p, li, input, textarea {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+  .findOutMoreButton a,
+  .readMoreButton a,
+  button {
+    font-size: 1.8rem;
+    padding: 5px 13px;
+  }
+  header .navigation .navigationList {
+    width: 50%;
+  }
+  header .navigation .navigationList li {
+    padding-right: 1.8rem;
+  }
+  .rightOverlappingImage {
+    display: none;
+  }
+  .newDestinations {
+    padding: 10% 0;
+  }
+  .newDestinations .firstLists {
+    display: block;
+  }
+  .newDestinations .firstLists .listItems {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+  .iconContainer {
+    width: 100px;
+    height: 40px;
+    margin-top: 1%;
+    margin-right: 2%;
+  }
+  .ourProgramMainContainer {
+    padding: 2% 0;
+  }
+  .ourProgramMainContainer .ourProgramContainer {
+    width: 48%;
+  }
+  .leftImage {
+    top: -4rem;
+  }
+  .rightImage {
+    bottom: -2rem;
+  }
+  .leftDescription {
+    padding: 19% 0 0 18%;
+  }
+  .winTripDescription {
+    width: 56%;
+    margin-left: 3%;
+  }
+  .blogHeader {
+    background-size: cover;
+    background-position: center;
+  }
+  .blogSideImg {
+    left: -3rem;
+  }
+  .blogSideWrittenContainer {
+    padding: 2% 10% 4%;
+  }
+  .commentsText {
+    width: 75%;
+    margin-left: 5%;
+  }
+  .contactHeader {
+    background-size: cover;
+    background-position: center;
+  }
+  .contactMainContainer .contactMain .formSection {
+    top: -44rem;
+    right: -27rem;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 2.8rem;
+    line-height: 48px;
+  }
+  h4 {
+    font-size: 2rem;
+    line-height: 44px;
+  }
+  p, li, input, textarea {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+  .findOutMoreButton a,
+  .readMoreButton a,
+  button {
+    font-size: 1.7rem;
+    padding: 5px 13px;
+  }
+  header .navigation .navigationList {
+    width: 58%;
+  }
+  .ourProgramMainContainer {
+    display: block;
+  }
+  .ourProgramMainContainer .ourProgramContainer {
+    width: 100%;
+  }
+  .leftDescription,
+  .rightDescription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 10%;
+  }
+  .leftImage img, .rightImage img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .extraVacationContainer .extraVacation {
+    padding: 6% 0;
+  }
+  .winTripContainer .winTrip {
+    display: block;
+  }
+  .winTripImage img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .winTripDescription {
+    margin: 0;
+    width: 100%;
+  }
+  .winTripDescription h3 {
+    text-align: center;
+  }
+  .winTripDescription .findOutMoreButton {
+    text-align: center;
+  }
+  .gallery .galleryImgRow .galleryImg {
+    width: 48%;
+  }
+  .galleryImg:nth-child(3) {
+    display: none;
+  }
+  .contactMainContainer .contactMain .formSection {
+    right: -24rem;
+    width: 67%;
+  }
+  .contactMainContainer {
+    padding-top: 5%;
+    margin-bottom: -4%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 2.6rem;
+    line-height: 46px;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 42px;
+  }
+  p, li, input, textarea {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+  header .navigation .navigationList {
+    width: 100%;
+  }
+  .heading h1 {
+    width: 100%;
+    padding-top: 44%;
+    margin: 0;
+  }
+  .winTripContainer .wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  .winTripContainer .winTripDescription {
+    padding: 10%;
+  }
 }
