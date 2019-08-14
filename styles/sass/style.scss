@@ -1,6 +1,6 @@
 @import "setup";
 @import "base";
-// @import "queries";
+
 
 .skipLink {
     position: absolute;
@@ -53,6 +53,12 @@ header{
     }
     
 }
+nav a:hover{
+    color:$yellow;
+    letter-spacing: 2px;
+    transition:0.5s all ease;
+}
+
 .rightOverlappingImage{
     width:55%;
     position:absolute;
@@ -80,8 +86,8 @@ header{
     
 }
 .iconContainer{
-    width:20%;
-    height:20%;
+    width:100px;
+    height:40px;
     background:$yellow;
     border-radius: 50%;
     margin-top:5%;
@@ -119,6 +125,21 @@ header{
         }
 
     }
+}
+.readMoreButton a:hover, 
+input[type="submit"]:hover{
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-image: linear-gradient(to right, #09e5e0 0%, #829395 50%, #27c8bb 100%);
+    transition: 0.5s;
+    background-position: right center;
+    background-size: 200% auto;
+}
+.findOutMoreButton a:hover{
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-image: linear-gradient(to right, #097be5 0%, #8dedf8 50%, #27c8bb 100%);
+    transition: 0.5s;
+    background-position: right center;
+    background-size: 200% auto;
 }
 .leftImage{
     position:relative;
@@ -286,7 +307,7 @@ header{
     }
     .searchForm{
         border:none;
-        border-bottom: 3px solid $yellow;
+        
         input{
             border:none;  
             width:47%;
@@ -306,6 +327,28 @@ header{
             margin:2% 0 4%; 
        
         }
+        .searchFormButton{
+            width:100%;
+            background: $yellow;
+            color:$blue;
+        }
+    }
+    input[type="submit"]:focus{
+        font-size: 2.9rem;
+        transition: 0.5s ease-in-out;
+    }
+    input[type="email"]:focus,
+    input[type="name"]:focus{
+        background-color:rgb(81, 224, 217);
+        border:rgb(13, 202, 155);
+    }
+    .contactMainContainer{
+        input[type="email"]:focus,
+        input[type="name"]:focus{
+            background-color:rgb(72, 142, 235);
+            border:rgb(5, 37, 182);
+        }
+        
     }
     .searchForm .searchFormInputName{
         margin-right:2%;
@@ -499,7 +542,7 @@ header{
         color:$blue;
         opacity:1;   
     }
-    button{
+    .searchFormButton{
         width:100%;
         padding:0.5%;
         background: $blue;
