@@ -34,9 +34,7 @@ header{
             flex-direction: row;
             justify-content: space-between;
             width:38%;
-            // @media (max-width: 940px) {
-
-            // }
+           
         }
    
     
@@ -199,20 +197,30 @@ header{
             display:flex;
             flex-flow: row wrap;
             justify-content: space-between;
-            .galleryImg{
-                width:32%;
+            // .galleryImg{
+            //     width:32%;
                 
-                img{
-                    transition:all 0.5s;
-                }
-                img:hover{
-                    transform:scale(1.1);
-                }
-            }
+            //     img{
+            //         transition:all 0.5s;
+            //     }
+            //     img:hover{
+            //         transform:scale(1.1);
+            //     }
+            // }
             
             
         }
     
+    }
+    .galleryImg{
+        width:32%;
+        
+        img{
+            transition:all 0.5s;
+        }
+        img:hover{
+            transform:scale(1.1);
+        }
     }
     .galleryCopyright{
         background: $yellow;
