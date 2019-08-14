@@ -14,16 +14,14 @@
     <header class="contactHeader"id="contact">
         <div class="wrapper">
             <nav class="navigation">
-                <!-- <input type="checkbox" id="toggle" name="toggle">
-                <div class="mobile-menu"> -->
+               
                     <ul class="navigationList">
                         <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
                         <li class="navItem"><a class="navLink" href="#about">About</a></li>
                         <li class="navItem"><a class="navLink" href="blog.html">Blog</a></li>
                         <li class="navItem"><a class="navLink" href="contact.html">Contact</a></li>
                     </ul>
-                <!-- </div>
-                <label for="toggle"><i class="fa fa-bars"></i> Menu</label> -->
+                
             </nav>
         </div>
         <div class="contactHeading wrapper">
@@ -32,6 +30,20 @@
     </header>
     <main class="contactMainContainer">
         <div class="contactMain wrapper">
+            <section class="formSection">
+                <form class="searchForm" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm"> 
+                        <fieldset>
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input class="searchFormInputName" type="name" name="name" id="name" placeholder="Name" required="true">
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input class="searchFormInputEmail" type="email" name="email" id="email" placeholder="Email address" required="true">
+                            <label for="textArea" class="visuallyHidden">TextArea</label>
+                            ​<textarea id="txtArea" id="textArea" placeholder="Message" rows="10" cols="18"></textarea>
+                            <button class="searchFormButton">Submit</button>
+                        </fieldset>
+                    </form>
+            </section>
+                    
             <section class="leftSection">
                 <div class="socialIcons">
                     <div class="socialMediaIcons">
@@ -65,18 +77,18 @@
                     <p>M5V2D5</p>
                 </div>     
             </section>
-            <section class="formSection">
-                <form class="searchForm" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm"> 
+            <!-- <section class="formSection">
+                <form class="searchForm" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm">  -->
                         <!-- <fieldset> -->
-                            <label for="name" class="visuallyHidden">Name</label>
+                            <!-- <label for="name" class="visuallyHidden">Name</label>
                             <input class="searchFormInputName" type="name" name="name" id="name" placeholder="Name" required="true">
                             <label for="email" class="visuallyHidden">Email</label>
                             <input class="searchFormInputEmail" type="email" name="email" id="email" placeholder="Email address" required="true">
                             ​<textarea id="txtArea" placeholder="Message" rows="10" cols="18"></textarea>
-                            <button class="searchFormButton">Submit</button>
+                            <button class="searchFormButton">Submit</button> -->
                         <!-- </fieldset> -->
-                    </form>
-            </section>
+                    <!-- </form>
+            </section> -->
             
         </div>
     </main>

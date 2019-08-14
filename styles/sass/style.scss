@@ -231,17 +231,13 @@ header{
             
         }
     }
-    // Contact page styling
-    // .mobile-menu{
-    //     display: none;
-    // }
-    // input[type="checkbox"]:checked  + .mobile-menu{
-    //     display:block;
-    // }
+    
     .contactHeader{
+        // background-color: $iceBlue;
         background-image: url(../Assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
         background-repeat: no-repeat;
-        height:73vh;
+        height:36vw;
+        width:100vw;
         background-size: contain;
         // padding:2% 0;
         display:flex;
@@ -265,26 +261,60 @@ header{
    
     .contactMainContainer{
         background: $iceBlue;
-        padding:5% 0;;
+        padding:5% 0 0;
         .contactMain{
             display:flex;
-            flex-flow: row wrap;
-            margin-bottom:-18rem;
+            flex-direction: row-reverse;
+            flex-wrap:wrap;
+            // margin-bottom:-18rem;
             // position:relative;
         }
             .formSection{
                 background: $blue;
                 position:relative;
-                top:-23rem;
-                right:-8rem;
+                top:-18rem;
+                right:-5rem;
                 box-shadow:20px 20px $yellow;
-                justify-content: space-between;
-                width: 73%;
+                // justify-content: space-between;;
+                width: 70%;
                 padding:4%;
+                display: flex;
+                flex-direction:row;
                 
                
             }
     }
+    .searchForm{
+        border:none;
+        border-bottom: 3px solid $yellow;
+        input{
+            border:none;  
+            width:47%;
+            background:$blue;
+            border-bottom: 3px solid $yellow;
+            padding:1% 2%;
+            margin:2% 0 4%;
+        
+              
+        }
+        textarea{
+            width:100%;
+            background:$blue;
+            border:3px solid $yellow;
+            background:$blue;
+            padding:1% 2%;
+            margin:2% 0 4%; 
+       
+        }
+    }
+    .searchForm .searchFormInputName{
+        margin-right:2%;
+    }
+    .searchForm .searchFormInputEmail{
+        margin-left:2%;
+    }
+    
+    
     
     .socialIcons{
         display: flex;
@@ -309,29 +339,29 @@ header{
    .contactEmail{
         padding-bottom: 3%;
     }
-    input{
-        background:$blue;
-        border:none;
-        width:49%;
-        border-bottom: 3px solid $yellow;
-        padding:1% 2%;
-        margin:2% 0 4%;
+    // input{
+    //     background:$blue;
+    //     border:none;
+    //     width:49%;
+    //     border-bottom: 3px solid $yellow;
+    //     padding:1% 2%;
+    //     margin:2% 0 4%;
         
-    }
+    // }
     ::placeholder{
         color:$white;
         opacity:1;
        
         
     }
-    textArea{
-        display:block;
-        background:$blue;
-        width:100%;
-        border:3px solid $yellow;
-        padding:1% 2%;
-        margin:2% 0 4%;  
-    }
+    // textArea{
+    //     display:block;
+    //     background:$blue;
+    //     width:100%;
+    //     border:3px solid $yellow;
+    //     padding:1% 2%;
+    //     margin:2% 0 4%;  
+    // }
     .searchFormButton{
         width:100%;
         padding:1%;
@@ -342,10 +372,13 @@ header{
     }
     // Blog page styling
     .blogHeader{
+        // background-color: $iceBlue;
         background-image: url(../Assets/Boat-Ride-Adventures-final-assets/blog-header.jpg);
         background-repeat: no-repeat;
-        height:73vh;
+        // height:73vh;
         background-size: contain;
+
+        height:35.7vw;
         // padding:2% 0 0;
         display:flex;
         flex-direction: column;

@@ -617,7 +617,8 @@ header .navigation .navigationList {
 .contactHeader {
   background-image: url(../Assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
-  height: 73vh;
+  height: 36vw;
+  width: 100vw;
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,7 +647,7 @@ header .navigation .navigationList {
 
 .contactMainContainer {
   background: #eafefc;
-  padding: 5% 0;
+  padding: 5% 0 0;
 }
 
 .contactMainContainer .contactMain {
@@ -654,24 +655,60 @@ header .navigation .navigationList {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin-bottom: -18rem;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactMainContainer .formSection {
   background: #0d457f;
   position: relative;
-  top: -23rem;
-  right: -8rem;
+  top: -18rem;
+  right: -5rem;
   -webkit-box-shadow: 20px 20px #fdd908;
           box-shadow: 20px 20px #fdd908;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 73%;
+  width: 70%;
   padding: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.searchForm {
+  border: none;
+  border-bottom: 3px solid #fdd908;
+}
+
+.searchForm input {
+  border: none;
+  width: 47%;
+  background: #0d457f;
+  border-bottom: 3px solid #fdd908;
+  padding: 1% 2%;
+  margin: 2% 0 4%;
+}
+
+.searchForm textarea {
+  width: 100%;
+  background: #0d457f;
+  border: 3px solid #fdd908;
+  background: #0d457f;
+  padding: 1% 2%;
+  margin: 2% 0 4%;
+}
+
+.searchForm .searchFormInputName {
+  margin-right: 2%;
+}
+
+.searchForm .searchFormInputEmail {
+  margin-left: 2%;
 }
 
 .socialIcons {
@@ -706,15 +743,6 @@ header .navigation .navigationList {
   padding-bottom: 3%;
 }
 
-input {
-  background: #0d457f;
-  border: none;
-  width: 49%;
-  border-bottom: 3px solid #fdd908;
-  padding: 1% 2%;
-  margin: 2% 0 4%;
-}
-
 ::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
@@ -735,15 +763,6 @@ input {
   opacity: 1;
 }
 
-textArea {
-  display: block;
-  background: #0d457f;
-  width: 100%;
-  border: 3px solid #fdd908;
-  padding: 1% 2%;
-  margin: 2% 0 4%;
-}
-
 .searchFormButton {
   width: 100%;
   padding: 1%;
@@ -756,8 +775,8 @@ footer.galleryCopyright {
 .blogHeader {
   background-image: url(../Assets/Boat-Ride-Adventures-final-assets/blog-header.jpg);
   background-repeat: no-repeat;
-  height: 73vh;
   background-size: contain;
+  height: 35.7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,6 +946,12 @@ footer.galleryCopyright {
   color: #fdd908;
 }
 
+@media (max-width: 1306px) {
+  .contactHeading {
+    top: -8rem;
+  }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .wrapper {
@@ -1023,16 +1048,22 @@ footer.galleryCopyright {
     width: 75%;
     margin-left: 5%;
   }
-  .contactHeader {
-    background-size: cover;
-    background-position: center;
+  .contactHeading {
+    top: -4rem;
+  }
+  .contactMainContainer .formSection {
+    top: -10rem;
+    right: 14rem;
+  }
+  .leftSection {
+    margin: 0 38% 2%;
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   h2 {
     font-size: 4rem;
@@ -1103,12 +1134,22 @@ footer.galleryCopyright {
     display: none;
   }
   .contactMainContainer .contactMain .formSection {
-    right: -24rem;
-    width: 67%;
+    right: 11rem;
+    width: 73%;
+    top: -9rem;
   }
-  .contactMainContainer {
-    padding-top: 5%;
-    margin-bottom: -4%;
+  .blogHeading {
+    top: 5%;
+  }
+  .blogPostImg {
+    top: -11rem;
+  }
+  .blogPostContainer {
+    right: -2.05rem;
+    top: 8rem;
+  }
+  .commentsContainer {
+    margin: 25% 0 0 auto;
   }
 }
 
@@ -1214,17 +1255,13 @@ footer.galleryCopyright {
   .blogForm input, .formSection input {
     width: 100%;
   }
-  .leftSection {
-    position: relative;
-    top: -25rem;
-    color: #ffffff;
+  .contactHeading {
+    top: 2rem;
   }
   .contactMainContainer .contactMain .formSection {
-    top: -21rem;
-    right: 0rem;
-    width: 100%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    top: -2.4rem;
+    right: 2.2rem;
+    width: 95%;
   }
 }
 
@@ -1247,7 +1284,7 @@ footer.galleryCopyright {
   p, li input, textarea {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
-    line-height: 30px;
+    line-height: 25px;
   }
   nav a {
     font-size: 1.7rem;
@@ -1259,7 +1296,38 @@ footer.galleryCopyright {
 h1 {
     padding-top: 63%;
   }
+  .blogHeader {
+    height: 50vw;
+  }
+  .blogHeading {
+    top: 5%;
+  }
+  .blogMainContainer {
+    padding: 1% 0% 5%;
+  }
   .commentsText p {
     line-height: 21px;
+  }
+  input {
+    width: 100%;
+  }
+  .searchForm .searchFormInputEmail {
+    margin-left: 0;
+  }
+  .contactHeading {
+    top: 1.3rem;
+  }
+  .contactHeading h1 {
+    font-size: 3.8rem;
+  }
+  .contactMainContainer .contactMain .formSection {
+    top: -1.6rem;
+    right: 0rem;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .leftSection {
+    margin: 0 27.2% 2%;
   }
 }

@@ -1,4 +1,8 @@
-
+@media(max-width:1306px) {
+    .contactHeading{
+        top:-8rem;
+    }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px){
    .wrapper{
@@ -105,14 +109,20 @@
 }
 
 //Contact Page styling starts
-.contactHeader{
-    background-size: cover;
-    background-position: center;
+.contactHeading{
+    top:-4rem;
 }
-// .contactMainContainer .contactMain .formSection{
-//     top:-44rem;
-//     right:-27rem;
-// }
+.contactMainContainer{
+    .formSection{
+        top:-10rem;
+        right:14rem;
+    }
+}
+.leftSection{
+    margin:0 38% 2%;
+}
+
+
 
    
 }//small desktops styling ends//
@@ -120,7 +130,7 @@
 @media (max-width: 768px){
     //Index page styling
     h1{
-        font-size:7rem;
+        font-size:6rem;
     }
     h2{
         font-size:4rem;
@@ -208,15 +218,27 @@
     .contactMainContainer{
         .contactMain{
             .formSection{
-                right:-24rem;
-                width:67%;
+                right:11rem;
+                width:73%;
+                top:-9rem;
             }
         }
     }
-    .contactMainContainer{
-        padding-top:5%;
-        margin-bottom:-4%;
+    ////BLOG PAGE STYLING STARTS HERE FOR 768px///
+    .blogHeading{
+        top:5%;
     }
+    .blogPostImg{
+        top:-11rem;
+    }
+    .blogPostContainer{
+        right:-2.05rem;
+        top:8rem;
+    }
+    .commentsContainer{
+        margin:25% 0 0 auto;
+    }
+    
 }//landscape phone to potrait tablet ends
 ///* Landscape phones and down */
 
@@ -337,18 +359,16 @@
     }
 }
 ///Contact Page Styling///
-.leftSection{
-    position:relative;
-    top:-25rem;
-    color:$white;
+.contactHeading{
+    top:2rem;
 }
 .contactMainContainer{
     .contactMain{
         .formSection{
-            top:-21rem;
-            right:0rem;
-            width:100%;
-            box-shadow:none;
+            top:-2.4rem;
+            right:2.2rem;
+            width:95%;
+            // box-shadow:none;
         }
     }
 }
@@ -373,7 +393,7 @@
     p, li input, textarea{
         font-size:1.5rem;
         letter-spacing: 0.5px;
-        line-height:30px;
+        line-height:25px;
         
     }
     nav a{
@@ -388,9 +408,46 @@
             padding-top:63%;
     }
     //blog styling///
+    .blogHeader{
+        height:50vw;
+    }
+    .blogHeading{
+        top:5%;
+    }
+    .blogMainContainer{
+        padding:1% 0% 5%;
+    }
     .commentsText p{
         line-height:21px;
     }
+    input{
+        width:100%;
+    }
+    .searchForm .searchFormInputEmail{
+        margin-left:0;
+    }
+
+    //contact styling///
+    .contactHeading{
+        top:1.3rem;
+        h1{
+            font-size:3.8rem;
+        }
+    }
+    .contactMainContainer{
+        .contactMain{
+            .formSection{
+                top:-1.6rem;
+                right:0rem;
+                width:100%;
+                box-shadow:none;
+            }
+        }
+    }
+    .leftSection{
+        margin:0 27.2% 2%;
+    }
+    
 
 }//styling ends//
 
