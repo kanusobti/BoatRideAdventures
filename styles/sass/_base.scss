@@ -1,11 +1,11 @@
-
+///variables used///
 $iceBlue:#eafefc;
 $yellow:#fdd908;
 $blue:#0d457f;
 $white:#ffffff;
 $baseFont:'Roboto', sans-serif;
 $headingFont:'IM Fell English', serif;
-
+////Base styling///
 html{
     font-size:62.5%;
 }
@@ -34,11 +34,6 @@ a{
     margin:0 auto;
     width:80%;
 }
-// .fullBleedWrapper{
-//     max-width:1280px;
-//     margin:0 auto;
-//     width:100%;
-// }
 h1{
     font-size: 7.9rem;
     font-weight: 400;
@@ -74,7 +69,6 @@ p, li, input, textarea{
     letter-spacing: 1px;
     font-family:$baseFont;
 }
-
 nav a{
     font-size:2rem;
     font-family:$baseFont;
@@ -95,6 +89,5 @@ nav a{
     color:$blue;
     font-style: italic;
     background: $yellow;
-    padding: 10px 20px;
-    
+    padding: 10px 20px;    
 }

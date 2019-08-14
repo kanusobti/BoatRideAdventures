@@ -8,14 +8,12 @@
    .wrapper{
        width:90%;
    }
-   // INDEX PAGE styling
+   // INDEX PAGE  for 940px styling starts here
     .heading{
-        h1{
-            
+        h1{    
             width:100%;
             padding-top:22%;
             margin:4% 13%;
-            // color:red;
         }
     }
     h1{
@@ -39,29 +37,27 @@
     }
     .findOutMoreButton a,
     .readMoreButton a,
-    button{
+    input[type="submit"]{
         font-size: 1.8rem;
         padding:5px 13px;
     }
-   header .navigation .navigationList{
-       width:50%;
-      
-   }
-   .navigationList li{
+    header .navigation .navigationList{
+       width:50%;  
+    }
+    .navigationList li{
         padding-right:1.8rem;
-    
-   }
-   .rightOverlappingImage{
+    }
+    .rightOverlappingImage{
        display: none;
-   }
-   .newDestinations{
-    padding:10% 0;
-    .firstLists{
-        display: block;
-        .listItems{
-            width:100%;
-            padding-bottom:3%;
-        }
+    }
+    .newDestinations{
+        padding:10% 0;
+        .firstLists{
+            display: block;
+            .listItems{
+                width:100%;
+                padding-bottom:3%;
+            }
     }
 }
 .iconContainer{
@@ -89,7 +85,7 @@
     width:56%;
     margin-left:3%;
 }
-//BLOG page styling
+//BLOG page styling for 940px starts here//
 .blogHeader{
     background-size:cover;
     background-position: center;
@@ -101,34 +97,35 @@
     padding:2% 10% 4%;
 }
 .blogPostContainer{
-    right:-0.75rem;
+    right:-2.15rem;
 }
 .commentsText{
     width:75%;
     margin-left: 5%;
 }
 
-//Contact Page styling starts
+//Contact Page styling for 940px starts
 .contactHeading{
-    top:-4rem;
+    top:0rem;
 }
 .contactMainContainer{
-    .formSection{
-        top:-10rem;
-        right:14rem;
+    .contactMain{
+        .formSection{
+            top:-7rem;
+            right:14rem;
+        }
     }
+    
 }
 .leftSection{
     margin:0 38% 2%;
 }
-
-
-
    
-}//small desktops styling ends//
+}//small desktops 940px styling ends here//
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px){
-    //Index page styling
+    //Index page styling starts here//
     h1{
         font-size:6rem;
     }
@@ -164,8 +161,7 @@
     .ourProgramMainContainer{
         display:block;
         .ourProgramContainer{
-            width:100%;
-                       
+            width:100%;               
         }
     }
     .leftDescription,
@@ -184,9 +180,7 @@
     .winTripContainer{
         .winTrip{
             display:block;
-        
         }
-    
     }
     .winTripImage img{
         box-shadow:none;
@@ -201,20 +195,16 @@
             text-align:center;
         }
     }
-    // .gallery{
-    //     .galleryImgRow{
-    //         .galleryImg{
-    //             width:48%;
-    //         }
-    //     }
-    // }
     .galleryImg{
         width:48%;
     }
     .galleryImg:nth-child(3){
         display:none;
     }
-    //contact page styling//
+    //contact page styling for 768px starts here//
+    .contactHeading{
+        top:-4rem;
+    }
     .contactMainContainer{
         .contactMain{
             .formSection{
@@ -239,12 +229,12 @@
         margin:25% 0 0 auto;
     }
     
-}//landscape phone to potrait tablet ends
-///* Landscape phones and down */
+}//landscape phone to potrait tablet 768px ends here//
 
+///* Landscape phones and down */
 @media (max-width:480px){
     h1{
-        font-size:5.5rem;
+        font-size:5rem;
     }
     h2{
         font-size:3rem;
@@ -267,18 +257,15 @@
     button{
         font-size:2rem;
         line-height: 37px;
-        padding: 5px 10px;
-        
+        padding: 5px 10px;    
     }
     header{
         .navigation{
             .navigationList{
-                width:100%;
-                
+                width:100%;    
             }
         }
     }
-    
     .heading{
         h1{
             width:100%;
@@ -303,7 +290,6 @@
     .galleryImg{
         width:100%;
         margin-bottom: 5%;
-        
         img{
             transition:all 0.5s;
         }
@@ -314,7 +300,7 @@
     .galleryImg:nth-child(3){
         display:block;
     }
-//blog page styling//
+//Blog page styling for 420px starts here //
 .blogMainContainer{
     display:block;
     aside{
@@ -344,7 +330,6 @@
     box-shadow:none;
     // background:$white;
     .blogPostDescription{
-       
         h3{
             text-align: center;
         }
@@ -358,9 +343,9 @@
         width: 100%;
     }
 }
-///Contact Page Styling///
+///Contact Page Styling for 420px///
 .contactHeading{
-    top:2rem;
+    top:1rem;
 }
 .contactMainContainer{
     .contactMain{
@@ -368,13 +353,14 @@
             top:-2.4rem;
             right:2.2rem;
             width:95%;
-            // box-shadow:none;
         }
     }
 }
-}//landscape phones and down ends//
+}//landscape phones and down 420px ends here//
+
 // small phone styling starts
 @media(max-width:320px){
+    ///index page styling////
     h1{
         font-size:4rem;
     }
@@ -393,12 +379,10 @@
     p, li input, textarea{
         font-size:1.5rem;
         letter-spacing: 0.5px;
-        line-height:25px;
-        
+        line-height:25px;    
     }
     nav a{
-        font-size:1.7rem;
-        
+        font-size:1.7rem;    
     }
     .navigationList li{
         padding-right:0.8rem;
@@ -407,7 +391,7 @@
         h1{
             padding-top:63%;
     }
-    //blog styling///
+    //blog page styling starts from here///
     .blogHeader{
         height:50vw;
     }
@@ -426,8 +410,7 @@
     .searchForm .searchFormInputEmail{
         margin-left:0;
     }
-
-    //contact styling///
+    //contact page styling///
     .contactHeading{
         top:1.3rem;
         h1{

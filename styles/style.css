@@ -391,6 +391,7 @@ header .navigation .navigationList {
 
 nav a:hover {
   color: #fdd908;
+  border-bottom: 3px solid #fdd908;
   letter-spacing: 2px;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
@@ -693,7 +694,7 @@ input[type="submit"]:hover {
       flex-wrap: wrap;
 }
 
-.contactMainContainer .formSection {
+.contactMainContainer .contactMain .formSection {
   background: #0d457f;
   position: relative;
   top: -18rem;
@@ -1037,7 +1038,7 @@ footer.galleryCopyright {
   }
   .findOutMoreButton a,
   .readMoreButton a,
-  button {
+  input[type="submit"] {
     font-size: 1.8rem;
     padding: 5px 13px;
   }
@@ -1096,17 +1097,17 @@ footer.galleryCopyright {
     padding: 2% 10% 4%;
   }
   .blogPostContainer {
-    right: -0.75rem;
+    right: -2.15rem;
   }
   .commentsText {
     width: 75%;
     margin-left: 5%;
   }
   .contactHeading {
-    top: -4rem;
+    top: 0rem;
   }
-  .contactMainContainer .formSection {
-    top: -10rem;
+  .contactMainContainer .contactMain .formSection {
+    top: -7rem;
     right: 14rem;
   }
   .leftSection {
@@ -1187,6 +1188,9 @@ footer.galleryCopyright {
   .galleryImg:nth-child(3) {
     display: none;
   }
+  .contactHeading {
+    top: -4rem;
+  }
   .contactMainContainer .contactMain .formSection {
     right: 11rem;
     width: 73%;
@@ -1209,7 +1213,7 @@ footer.galleryCopyright {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
@@ -1310,7 +1314,7 @@ footer.galleryCopyright {
     width: 100%;
   }
   .contactHeading {
-    top: 2rem;
+    top: 1rem;
   }
   .contactMainContainer .contactMain .formSection {
     top: -2.4rem;

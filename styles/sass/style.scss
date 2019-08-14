@@ -1,7 +1,7 @@
 @import "setup";
 @import "base";
 
-
+/////Styling for index.html////
 .skipLink {
     position: absolute;
     left: -1000px;
@@ -10,7 +10,6 @@
     background: white;
     color: black;
 }
-
 .skipLink:focus {
     left: 10px;
 }
@@ -18,14 +17,12 @@ header{
     background-image: url(../Assets/Boat-Ride-Adventures-final-assets/home-header.jpg);
     background-repeat: no-repeat;
     height:100vh;
-    // min-height:800px;
     background-size: cover;
     padding:2% 0;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     position:relative;
-
     .navigation{
         display:flex;
         .navigationList{
@@ -33,16 +30,13 @@ header{
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
-            width:38%;
-           
+            width:38%;   
         }
-   
-    
     }
 }
+
 .heading{
     display: flex;
-    // position:relative;
     h1{
         width:45%;
         padding-top: 32%;
@@ -50,11 +44,11 @@ header{
         .headingAdventures{
             display: block;
         }
-    }
-    
+    }    
 }
 nav a:hover{
     color:$yellow;
+    border-bottom:3px solid $yellow;
     letter-spacing: 2px;
     transition:0.5s all ease;
 }
@@ -65,10 +59,7 @@ nav a:hover{
     bottom:-12rem;
     right:0rem;
     z-index: 10;
-   
-}
-           
-
+}           
 .newDestinations{
     background-color: $iceBlue;
     position:relative;
@@ -79,11 +70,9 @@ nav a:hover{
         justify-content: space-around;
         .listItems{
             width:50%;
-            display:flex;
-          
+            display:flex;  
         }
-    }        
-    
+    }            
 }
 .iconContainer{
     width:100px;
@@ -94,30 +83,25 @@ nav a:hover{
     display:flex;
     justify-content: center;
     align-items:center;
-
 }
 .fas{
     color:$blue;
     font-size:2rem;
 }
-
 .ourProgramMainContainer{
     background: $blue;
     padding:4% 0;
     display: flex;
     justify-content: space-between;
-   
     .ourProgramContainer{
         display:flex;
         flex-wrap:wrap;
         flex-direction: column;
-        width:45%;
-               
+        width:45%;       
         .ourProgramList{
             width: 100%;
             display:flex;
             flex-direction: column;
-            
             h3, p{
                 color:$white;  
             }
@@ -146,10 +130,8 @@ input[type="submit"]:hover{
     top:-9rem;
     img{
         box-shadow:20px 20px;
-        color:$yellow;
-        
-    }
-    
+        color:$yellow;    
+    }    
 }
 .rightImage{
     position:relative;
@@ -157,8 +139,7 @@ input[type="submit"]:hover{
     img{
         -webkit-box-shadow: -20px 20px 0px 0px $yellow;
         -moz-box-shadow: -20px 20px 0px 0px $yellow;
-        box-shadow: -20px 20px 0px 0px $yellow;
-       
+        box-shadow: -20px 20px 0px 0px $yellow;   
     }
 }
 .leftDescription{
@@ -167,11 +148,9 @@ input[type="submit"]:hover{
         text-align: right;
     }
 }
-
 .rightDescription{
     padding:2% 20% 10% 0;
 }
-
 .readMoreButton, .findOutMoreButton{
     margin:5% 0;
 }
@@ -189,275 +168,213 @@ input[type="submit"]:hover{
         }
     }
 }
-  .winTripContainer{
-      background-color: $iceBlue;
-      padding: 5% 0;
-      .winTrip{
-          display: flex;
-          flex-flow: row wrap;
-          
-        }
-      
-    }
-    .winTripImage img{
-        -webkit-box-shadow: -20px 20px 0px 0px $yellow;
-        -moz-box-shadow: -20px 20px 0px 0px $yellow;
-        box-shadow: -20px 20px 0px 0px $yellow;
-    }
-    .winTripDescription{
-        margin-left:10%;
-        width:64%;
-        h3{
-            color:$blue;
-        }
-    }
-    .gallery{
-        background: $blue;
-        padding:5% 0 0;
-        .galleryImgRow{
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            // .galleryImg{
-            //     width:32%;
-                
-            //     img{
-            //         transition:all 0.5s;
-            //     }
-            //     img:hover{
-            //         transform:scale(1.1);
-            //     }
-            // }
-            
-            
-        }
-    
-    }
-    .galleryImg{
-        width:32%;
-        
-        img{
-            transition:all 0.5s;
-        }
-        img:hover{
-            transform:scale(1.1);
-        }
-    }
-    .galleryCopyright{
-        background: $yellow;
-        text-align: center;
-        margin-top:5%;
-        .galleryLink{
-            color:$blue;
-            
-        }
-    }
-    
-    .contactHeader{
-        // background-color: $iceBlue;
-        background-image: url(../Assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
-        background-repeat: no-repeat;
-        height:36vw;
-        width:100vw;
-        background-size: contain;
-        // padding:2% 0;
-        display:flex;
-        flex-direction: column;
-        .navigationList{
-            display: flex;
-            width:33%;
-            // justify-content: space-between;
-        }
-       
-    }
-   
-    .contactHeading{
-        // padding-bottom:15%;
-        position:relative;
-        top:-24rem;
-        h1{color:$white;
-
-        }
-    }
-   
-    .contactMainContainer{
-        background: $iceBlue;
-        padding:5% 0 0;
-        .contactMain{
-            display:flex;
-            flex-direction: row-reverse;
-            flex-wrap:wrap;
-            // margin-bottom:-18rem;
-            // position:relative;
-        }
-            .formSection{
-                background: $blue;
-                position:relative;
-                top:-18rem;
-                right:-5rem;
-                box-shadow:20px 20px $yellow;
-                // justify-content: space-between;;
-                width: 70%;
-                padding:4%;
-                display: flex;
-                flex-direction:row;
-                
-               
-            }
-    }
-    .searchForm{
-        border:none;
-        
-        input{
-            border:none;  
-            width:47%;
-            background:$blue;
-            border-bottom: 3px solid $yellow;
-            padding:1% 2%;
-            margin:2% 0 4%;
-        
-              
-        }
-        textarea{
-            width:100%;
-            background:$blue;
-            border:3px solid $yellow;
-            background:$blue;
-            padding:1% 2%;
-            margin:2% 0 4%; 
-       
-        }
-        .searchFormButton{
-            width:100%;
-            background: $yellow;
-            color:$blue;
-        }
-    }
-    input[type="submit"]:focus{
-        font-size: 2.9rem;
-        transition: 0.5s ease-in-out;
-    }
-    input[type="email"]:focus,
-    input[type="name"]:focus{
-        background-color:rgb(81, 224, 217);
-        border:rgb(13, 202, 155);
-    }
-    .contactMainContainer{
-        input[type="email"]:focus,
-        input[type="name"]:focus{
-            background-color:rgb(72, 142, 235);
-            border:rgb(5, 37, 182);
-        }
-        
-    }
-    .searchForm .searchFormInputName{
-        margin-right:2%;
-    }
-    .searchForm .searchFormInputEmail{
-        margin-left:2%;
-    }
-    
-    
-    
-    .socialIcons{
+.winTripContainer{
+    background-color: $iceBlue;
+    padding: 5% 0;
+    .winTrip{
         display: flex;
-        .socialMediaIcons i{
-            color:$blue;
-            padding:8px;
-            font-size:2.3rem;        
-        }
-        .fa-instagram:hover{
-            color:#8a3ab9;
-        }
-        .fa-facebook-f:hover{
-            color:#3b5998;
-        }
-        .fa-whatsapp:hover{
-            color:#25D366;
-        }
-        .fa-twitter:hover{
-            color:#00aced;
-        }
+        flex-flow: row wrap;    
+    }    
+}
+.winTripImage img{
+    -webkit-box-shadow: -20px 20px 0px 0px $yellow;
+    -moz-box-shadow: -20px 20px 0px 0px $yellow;
+    box-shadow: -20px 20px 0px 0px $yellow;
+}
+.winTripDescription{
+    margin-left:10%;
+    width:64%;
+    h3{
+        color:$blue;
     }
-   .contactEmail{
-        padding-bottom: 3%;
+}
+.gallery{
+    background: $blue;
+    padding:5% 0 0;
+    .galleryImgRow{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;    
     }
-    // input{
-    //     background:$blue;
-    //     border:none;
-    //     width:49%;
-    //     border-bottom: 3px solid $yellow;
-    //     padding:1% 2%;
-    //     margin:2% 0 4%;
+}
+.galleryImg{
+    width:32%;
+    img{
+        transition:all 0.5s;
+    }
+    img:hover{
+        transform:scale(1.1);
+    }
+}
+.galleryCopyright{
+    background: $yellow;
+    text-align: center;
+    margin-top:5%;
+    .galleryLink{
+        color:$blue;
         
-    // }
-    ::placeholder{
-        color:$white;
-        opacity:1;
-       
-        
     }
-    // textArea{
-    //     display:block;
-    //     background:$blue;
-    //     width:100%;
-    //     border:3px solid $yellow;
-    //     padding:1% 2%;
-    //     margin:2% 0 4%;  
-    // }
+}////Index.html styling ends here////
+
+    //////Styling for Contact.html begins////
+.contactHeader{
+    background-image: url(../Assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    height:36vw;
+    width:100vw;
+    background-size: contain;
+    display:flex;
+    flex-direction: column;
+    .navigationList{
+        display: flex;
+        width:33%;
+    }   
+}
+.contactHeading{
+    position:relative;
+    top:-24rem;
+    h1{color:$white;
+    }
+}
+.contactMainContainer{
+    background: $iceBlue;
+    padding:5% 0 0;
+    .contactMain{
+        display:flex;
+        flex-direction: row-reverse;
+        flex-wrap:wrap;
+        .formSection{
+            background: $blue;
+            position:relative;
+            top:-18rem;
+            right:-5rem;
+            box-shadow:20px 20px $yellow;
+            width: 70%;
+            padding:4%;
+            display: flex;
+            flex-direction:row;        
+        }
+    }       
+}
+.searchForm{
+    border:none;    
+    input{
+        border:none;  
+        width:47%;
+        background:$blue;
+        border-bottom: 3px solid $yellow;
+        padding:1% 2%;
+        margin:2% 0 4%;
+    }
+    textarea{
+        width:100%;
+        background:$blue;
+        border:3px solid $yellow;
+        background:$blue;
+        padding:1% 2%;
+        margin:2% 0 4%; 
+    }
     .searchFormButton{
         width:100%;
-        padding:1%;
+        background: $yellow;
+        color:$blue;
     }
-   
-    footer.galleryCopyright{
-        margin-top: 0;
+}
+input[type="submit"]:focus{
+    font-size: 2.9rem;
+    transition: 0.5s ease-in-out;
+}
+input[type="email"]:focus,
+input[type="name"]:focus{
+    background-color:rgb(81, 224, 217);
+    border:rgb(13, 202, 155);
+}
+.contactMainContainer{
+    input[type="email"]:focus,
+    input[type="name"]:focus{
+        background-color:rgb(72, 142, 235);
+        border:rgb(5, 37, 182);
     }
-    // Blog page styling
-    .blogHeader{
-        // background-color: $iceBlue;
-        background-image: url(../Assets/Boat-Ride-Adventures-final-assets/blog-header.jpg);
-        background-repeat: no-repeat;
-        // height:73vh;
-        background-size: contain;
+    
+}
+.searchForm .searchFormInputName{
+    margin-right:2%;
+}
+.searchForm .searchFormInputEmail{
+    margin-left:2%;
+}
+.socialIcons{
+    display: flex;
+    .socialMediaIcons i{
+        color:$blue;
+        padding:8px;
+        font-size:2.3rem;        
+    }
+    .fa-instagram:hover{
+        color:#8a3ab9;
+    }
+    .fa-facebook-f:hover{
+        color:#3b5998;
+    }
+    .fa-whatsapp:hover{
+        color:#25D366;
+    }
+    .fa-twitter:hover{
+        color:#00aced;
+    }
+}
+.contactEmail{
+    padding-bottom: 3%;
+}
+::placeholder{
+    color:$white;
+    opacity:1;    
+}
+.searchFormButton{
+    width:100%;
+    padding:1%;
+}
+footer.galleryCopyright{
+    margin-top: 0;
+}
+///Contact.html styling ends here//
 
-        height:35.7vw;
-        // padding:2% 0 0;
-        display:flex;
-        flex-direction: column;
-        
-        .navigationList{
-            display: flex;
-            width:33%;
-            // justify-content: space-between;
+// Blog page styling starts here////
+.blogHeader{
+    background-image: url(../Assets/Boat-Ride-Adventures-final-assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:35.7vw;
+    display:flex;
+    flex-direction: column;
+    .navigationList{
+        display: flex;
+        width:33%;
+    }
+}
+.blogHeading{
+    position:relative;
+    top:-43%;
+    h1{
+        color:$white;    
+    }
+}
+.blogMainContainer{
+    background: $iceBlue;
+    display: flex;
+    flex-flow:row wrap;
+    padding:5% 0;
+    aside{
+        width:35%;
+        margin-top:3%;
+        .asideContainer{
+            background:$blue;   
         }
     }
-    .blogHeading{
-        // padding-bottom:15%;
-        position:relative;
-        top:-43%;
-        h1{
-            color:$white;
-            
-        }
+    .rightSection{
+        width:60%;
     }
-   .blogMainContainer{
-       background: $iceBlue;
-       display: flex;
-       flex-flow:row wrap;
-       padding:5% 0;
-       aside{
-           width:35%;
-           margin-top:3%;
-           .asideContainer{
-               background:$blue;
-               
-           }
-       }
-      .rightSection{
-          width:60%;
-      }
-   }
+}
 
 .blogSideWrittenContainer{
     padding: 2% 6% 4%;;
@@ -475,10 +392,8 @@ input[type="submit"]:hover{
    .blogSideImg{
        position: relative;
        top:-1rem;
-       left:-6rem;
-       
+       left:-6rem;   
 }
-
 .blogPostImg{
     position: relative;
     top:-24rem;
@@ -497,7 +412,6 @@ input[type="submit"]:hover{
     top:-5rem;
     right:-2rem;
     overflow-x: hidden;
-    
     h3{
         color:$blue;
     }
@@ -505,21 +419,18 @@ input[type="submit"]:hover{
         padding:1% 0;
     }
 }
-
 .commentsContainer{
     margin-bottom:1%;
     padding:2% 0;
     h3{
         color:$blue;
     }
-   
     .commentsDescription{
         display:flex;
         margin-top:3%;
         .commentsImage{
             width: 20%;
-        }
-       
+        }   
     }
 }
 .commentsText{
@@ -549,9 +460,7 @@ input[type="submit"]:hover{
         color:$yellow;
     }
 
-    
-
-
-    
 }
+/////Blog.html styling ends here
+/////Import Queries Noe//
 @import "queries";
